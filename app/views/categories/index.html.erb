@@ -1,0 +1,4 @@
+<h1>All Categories</h1>
+<% Category.all.each do |category| %>
+  <%= link_to category.title, category_path(category), class: 'nav-link' %>
+<% end %>
